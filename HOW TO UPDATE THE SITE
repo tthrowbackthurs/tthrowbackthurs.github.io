@@ -1,0 +1,6 @@
+HOW TO UPDATE THE SITE
+
+1. Copy post to index.html
+2. Move original post to /posts
+3. Move post that was on front page to /posts/archive
+4. Update archive.html to include link new post
