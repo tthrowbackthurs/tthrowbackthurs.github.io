@@ -11,15 +11,15 @@
     <title>Throwback Thursday</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 
     <!-- Custom styles for this template -->
-    <link href="css/clean-blog.min.css" rel="stylesheet">
+    <link href="/css/clean-blog.min.css" rel="stylesheet">
 
   </head>
 
@@ -28,7 +28,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand" href="index.html">#ThrowbackThursday</a>
+        <a class="navbar-brand" href="/index.html">#ThrowbackThursday</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fa fa-bars"></i>
@@ -36,19 +36,19 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
+              <a class="nav-link" href="/index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="archive.html">Archive</a>
+              <a class="nav-link" href="/archive.html">Archive</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
+              <a class="nav-link" href="/about.html">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="datasets.html">Datasets</a>
+              <a class="nav-link" href="/datasets.html">Datasets</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
+              <a class="nav-link" href="/contact.html">Contact</a>
             </li>
           </ul>
         </div>
@@ -65,10 +65,10 @@
           <div class="col-lg-8 col-md-10 mx-auto">
             <div class="post-heading">
               <h1>United States Crime Rates 1960 to 2014</h1>
-              <h2 class="subheading">Week 5 Viz</h2>
+              <h2 class="subheading">Week 5 Dataset and Historical Background</h2>
               <span class="meta">Posted by
                 <a href="https://twitter.com/davidvelleca">David Velleca</a>
-                on April 8, 2018</span>
+                on April 5, 2018</span>
             </div>
           </div>
         </div>
@@ -83,44 +83,12 @@
 			<blockquote class="blockquote"><a href="https://query.data.world/s/7hiowfjzptelhlbmo4ardg27zgqbpn" target="_blank">Click here to download this week's dataset as a CSV</a></blockquote>				
 			<blockquote class="blockquote"><a href="https://query.data.world/s/vp4kaoq6dcfqnwaxglkv2x75xeouhp" target="_blank">Click here to download this week's dataset as a Hyper Extract</a></blockquote>
 		  </div>
-		  <div class='tableauPlaceholder' id='viz1523238726042' style='position: relative'>
-			<noscript>
-				<a href='http:&#47;&#47;throwback-thursday.com'>
-					<img alt='Crime in the United States 1960 to 2014 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Un&#47;UnitedStatesCrime-1960to2014&#47;CrimeintheUnitedStates1960to2014&#47;1_rss.png' style='border: none' />
-				</a>
-			</noscript>
-		  <object class='tableauViz'  style='display:none;'>
-			<param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
-			<param name='embed_code_version' value='3' /> 
-			<param name='site_root' value='' />
-			<param name='name' value='UnitedStatesCrime-1960to2014&#47;CrimeintheUnitedStates1960to2014' />
-			<param name='tabs' value='no' />
-			<param name='toolbar' value='yes' />
-			<param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Un&#47;UnitedStatesCrime-1960to2014&#47;CrimeintheUnitedStates1960to2014&#47;1.png' /> 
-			<param name='animate_transition' value='yes' />
-			<param name='display_static_image' value='yes' />
-			<param name='display_spinner' value='yes' />
-			<param name='display_overlay' value='yes' />
-			<param name='display_count' value='yes' />
-		  </object>
-		  </div>
-          <script type='text/javascript'>
-			var divElement = document.getElementById('viz1523238726042');
-			var vizElement = divElement.getElementsByTagName('object')[0];
-			vizElement.style.width='1200px';vizElement.style.height='827px';
-			var scriptElement = document.createElement('script');
-			scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-			vizElement.parentNode.insertBefore(scriptElement, vizElement);
-          </script>
 		  <div class="col-lg-8 col-md-10 mx-auto">
-			<h2 class="section-heading">Data Storytelling and Data Viz Approach</h2>
-				<p>I wanted a clean and simple viz that showed 3 things at the same time:</p>
-					<ol>
-						<li>Crime rates over time</li>
-						<li>Overall trend for the selected timeframe, and</li>
-						<li>Crime rates by state</li>
-					</ol>
-				<p>I achieved this with a tile map, using area charts to show the rates by year, with the color of the charts indicating the overall trend, and the charts in approximate geographical positions of the states.  The metric that I chose to use - Property Crime Rates and Violent Crime Rates - are normalized at a per 100,000 population basis, so the tile map also helps to avoid inadvertently misrepresenting data due to the size of a state.</p>
+			<h2 class="section-heading">Historical Background</h2>
+				<p>Crime is as old as humanity, so in the interest of time and brevity, we'll skip the background on crime, and focus on the United States Federal Bureau of Investigation.  The FBI's history begins 14 years before the founding of the bureau, with the creation of the National Bureau of Criminal Identification.  The sole purpose of the NBCI was to collect and share identifying information on known criminals with law enforcement agencies across the United States.  Following the assassination of President William McKinley in 1901, Theodore Roosevelt assumed the Presidency and took a more focused stance on crime.</p>
+				<p>As a part of this, President Roosevelt tasked his newly appointed Attorney General Charles Bonaparte with organizing an investigative force for the Justice Department.  On July 26, 1908 the FBI was founded in principal with Bonaparte's directive that investigative needs would be reported to the Chief Examiner who would then assign the investigation to one of the then 34 agents.  The bureau continued growing, receiving its moniker - the "Bureau of Investigation" - by Bonaparte's successor George Wickersham, the new Attorney General.</p>
+				<p>Following the founding, the Bureau struggled to fully get off the ground, focusing mainly on more minor crime, while searching for its identity.  When J. Edgar Hoover became director in 1924, the Bureau really began to flourish.  Nearly half a century under his leadership would serve to build a Bureau that saw increased purview, power and importance to the nation.</p>
+				<p>Data has been important to the Bureau since the early days.  In 1930, the Uniform Crime Reporting (UCR) program was rolled out with law enforcement agencies across the country sharing their statistics with the Bureau.  The data is now available from the 1960s on the UCR website.  With this data and background, what can you visualize?</p>
 			<h2 class="section-heading">Data Notes</h2>
 				<p>The data in this dataset contains a variety of caveats, all of which can be found <a href="https://www.ucrdatatool.gov/Search/Crime/State/RunCrimeStatebyState.cfm" target="_blank">here</a>.  The biggest notes to take into consideration are: the data are estimates; the New York data begins in 1965 (whereas all other states begin in 1960); the methodology for recording rape changed in 2013, where in previous years rapes were only included in the statistics if they met the previous definition of 'forcible rape' - details on crime definitions can be found <a href="https://www.ucrdatatool.gov/offenses.cfm" target="_blank">here</a>.</p>
 			<h2 class="section-heading">Data Source</h2>
