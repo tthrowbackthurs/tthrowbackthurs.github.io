@@ -64,7 +64,7 @@
           <div class="col-lg-8 col-md-10 mx-auto">
             <div class="post-heading">
               <h1>U.S. Educational Attainment 1940 - 2017</h1>
-              <h2 class="subheading">Week 7 Dataset and Historical Background</h2>
+              <h2 class="subheading">Week 7 Viz</h2>
               <span class="meta">Posted by
                 <a href="https://twitter.com/davidvelleca">David Velleca</a>
                 on April 19, 2018</span>
@@ -82,13 +82,45 @@
 			<blockquote class="blockquote"><a href="https://query.data.world/s/ulwrryy4ucs6fkhfgpm7t5hkdzfgaq" target="_blank">Click here to download this week's dataset as a CSV</a></blockquote>
 			<blockquote class="blockquote"><a href="https://query.data.world/s/pgzucxou2xhjklbpts56gnny5fxija" target="_blank">Click here to download this week's dataset as a Hyper Extract</a></blockquote>
 		  </div>
+		  <div class='tableauPlaceholder' id='viz1524231346955' style='position: relative'>
+			<noscript>
+				<a href='#'>
+					<img alt='United States Educational Attainment - 1940 to 2017 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ed&#47;EducationalAttainmentintheUnitedStates-1940to2017&#47;UnitedStatesEducationalAttainment-1940to2017&#47;1_rss.png' style='border: none' />
+				</a>
+			</noscript>
+			<object class='tableauViz'  style='display:none;'>
+				<param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+				<param name='embed_code_version' value='3' /> 
+				<param name='site_root' value='' />
+				<param name='name' value='EducationalAttainmentintheUnitedStates-1940to2017&#47;UnitedStatesEducationalAttainment-1940to2017' />
+				<param name='tabs' value='no' />
+				<param name='toolbar' value='yes' />
+				<param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ed&#47;EducationalAttainmentintheUnitedStates-1940to2017&#47;UnitedStatesEducationalAttainment-1940to2017&#47;1.png' />
+				<param name='animate_transition' value='yes' />
+				<param name='display_static_image' value='yes' />
+				<param name='display_spinner' value='yes' />
+				<param name='display_overlay' value='yes' />
+				<param name='display_count' value='yes' />
+			</object>
+		  </div>
+                <script type='text/javascript'>
+					var divElement = document.getElementById('viz1524231346955');
+					var vizElement = divElement.getElementsByTagName('object')[0];
+					vizElement.style.width='1000px';vizElement.style.height='827px';
+					var scriptElement = document.createElement('script');
+					scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+					vizElement.parentNode.insertBefore(scriptElement, vizElement);
+                </script>
 		  <div class="col-lg-8 col-md-10 mx-auto">
-			<h2 class="section-heading">Historical Background</h2>
-				<p>As long as I can remember, the expectation was that I was going to graduate high school and go to college.  This was not only my parent's expectation, but also my own.  However, this has not always been the case, but this does not mean that education has not been valued in the United States.</p>
-				<p>The first schools were established shortly after the founding of the English Colonies in America.  The first public school, the Boston Latin School, is still open today, and by that virtue is the oldest public school in the U.S.  Higher education was also valued, and Harvard (1636), the University of Pennsylvania (1640) and The College of William and Mary (1693, becoming a university in 1779) all claim to be the first university in America.</p>
-				<p>In the early years of American education, primary schools focused on instilling morals through teaching the virtues of family, religion and community.  However, by the mid 19th century, the focus was on academics.  That didn't mean that education was available to all.  The barriers of gender and race were not eliminated until well into the 20th century.</p>
-				<p>Additionally, the same expectation that I had to graduate from college, was definitely not the norm.  Even at the turn of the 20th century, only 31 states mandated attendance for children aged 8-14.  By 1918, all states required students to complete elementary school.</p>
-				<p>Our data this week looks at educational attainment, or the number of school years completed, from 1940 to 2017.  The data encompasses an interesting time in the history of education in America - from the G.I. Bill providing for veterans to attend college after World War II and Vietnam, to desegregation in the 1960s and 70's, to the impact of the economic crisis of 2008 on student loans.  What can you visualize with the data?</p>
+			<h2 class="section-heading">Data Storytelling</h2>
+				<p>When I first downloaded this data, I knew that I wanted to look at the changes over time.  It struck me that 1.4M people aged 25 to 34 reported that the highest education they received was, at best, 4 years of elementary school.  Fortunately, this number decreased over the time period in the data (1940 - 2017), as did the number of those reporting only 5-8 years of elementary and also the number of people only attending 1-3 years of high school.</p>
+				<p>On the flip side, the number of people who reported graduating from high school, attending some college (inluding getting their Associate's degree) and finally graduating from college increased.  Even without the knowledge, or highlighting, of what was going on in the United States during this time that was driving these changes (desegregation, Title XI, Cold War, etc.), the changes are visible.
+				<p>The viz, though containing one line per level of educational attainment, allows for the audience to see where trends change. In 1991, when looking at both genders aged 25-34, the trend changes - the number of people who completed only their high school degree begins to drop, and the trend switches to college.</p>
+			<h2 class="section-heading">Data Viz Approach</h2>
+				<p>As I said, I knew that I wanted to look at how the trends changed over time, but I wasn't 100% sure on how I wanted to do this.  I started with a line graph that showed the difference from the 1940, but this view was static.  I was nearly done with that view, when I remembered a <a href="http://www.vizwiz.com/2017/08/home-prices.html" target="_blank">Workout Wednesday challenge</a> by <a href="http://twitter.com/vizwizbi" target="_blank">Andy Kriebel</a> inspired by <a href="http://twitter.com/harris7curtis" target="_blank">Curtis Harris</a>.</p>
+				<p>The viz is really interactive, with parameters allowing the user to change the frame of reference, both from the year perspective, but also from which attainment level is highlighted.  The highlighting was possible with my first view, but the ability to change the time reference was not.  This view was exactly what I was looking for.</p>
+				<p>There are several level of detail calculations that drive the viz, so this was a fun way for me to use these LOD skills that I don't always get to use in my daily life.  In addition to these LOD calcs, I also used quite a few calculated fields to drive the text in my tooltips.</p>
+				<p>I decided to keep the viz relatively clean with no labels, or legends.  Instead, I used tooltips with all of the data that I would have labeled the viz with, as well as much more.  I hope you enjoy the viz</p>
 			<h2 class="section-heading">Data Notes</h2>
 				<p>There are a few notes on the data this week:</p>
 					<ul>
