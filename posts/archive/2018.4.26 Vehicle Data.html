@@ -82,41 +82,12 @@
 			<blockquote class="blockquote"><a href="https://query.data.world/s/yxpxbr3tbddjy3emaxfew5kxzxuaih" target="_blank">Click here to download this week's dataset as a CSV</a></blockquote>
 			<blockquote class="blockquote"><a href="https://query.data.world/s/6syykgmsqgas62egryyjqjujni54dj" target="_blank">Click here to download this week's dataset as a Hyper Extract</a></blockquote>
 		  </div>
-		  <div class='tableauPlaceholder' id='viz1524928295078' style='position: relative'>
-			<noscript>
-				<a href='http:&#47;&#47;throwback-thursday.com'>
-					<img alt='U.S. Motor Vehicle Metrics 1950 to 2009 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;U_&#47;U_S_MotorVehicleMetrics1950-2009&#47;U_S_MotorVehicleMetrics1950to2009&#47;1_rss.png' style='border: none' />
-				</a>
-			</noscript>
-			<object class='tableauViz'  style='display:none;'>
-				<param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
-				<param name='embed_code_version' value='3' /> 
-				<param name='site_root' value='' />
-				<param name='name' value='U_S_MotorVehicleMetrics1950-2009&#47;U_S_MotorVehicleMetrics1950to2009' />
-				<param name='tabs' value='no' />
-				<param name='toolbar' value='yes' />
-				<param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;U_&#47;U_S_MotorVehicleMetrics1950-2009&#47;U_S_MotorVehicleMetrics1950to2009&#47;1.png' /> 
-				<param name='animate_transition' value='yes' />
-				<param name='display_static_image' value='yes' />
-				<param name='display_spinner' value='yes' />
-				<param name='display_overlay' value='yes' />
-				<param name='display_count' value='yes' />
-				<param name='filter' value='publish=yes' />
-			</object>
-		  </div>
-                <script type='text/javascript'>
-					var divElement = document.getElementById('viz1524928295078');
-					var vizElement = divElement.getElementsByTagName('object')[0];
-					vizElement.style.width='1400px';vizElement.style.height='927px';
-					var scriptElement = document.createElement('script');
-					scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-					vizElement.parentNode.insertBefore(scriptElement, vizElement);
-                </script>
 		  <div class="col-lg-8 col-md-10 mx-auto">
-			<h2 class="section-heading">Data Storytelling and Data Viz Approach</h2>
-				<p>For this week's viz, I wanted to focus on the differences of the metrics across vehicle classes as well as across time.  To look at the differences across vehicle types, I used the new step line capability of Tableau 2018.1, using color to delineate between the different vehicles.</p>
-				<p>I used a few different methods to look at the differences over time. The step line definitely shows changes across the years, but I also wanted to see how decades compared to the full time period.  I limited my data to 1950 to 2009, added some parameter controls and calculated fields to account for some decade logic, and them employed these in the vizzes.  The main step line viz filters down to the selected decade, while a summary step line viz highlights the selected decade, while lowlighting the other decades.  I achieved this with a dual axis chart - the primary axis being my metric as a step line, and the secondary being a constant with an area chart as the mark type.</p>
-				<p>At the bottom of the dashboard, I used a shape viz to drive interactivity and filter two sets of BANs - one for the selected decade, and the other for the entire time period.  This allows the user to clearly see how the minimum, maximum and average metrics for the selected decade compares to the full time period.</p>
+			<h2 class="section-heading">Historical Background</h2>
+				<p>This week's dataset looks at vehicle mileage, fuel consumption and it's associated economy.  By 1949, the first year in this dataset, automobiles had been in the United States for more than 50 years.  At this time, the infrastructure was improving to better support the growing number of automobiles in the nation, and would only improve within the next decade, with the Interstate Highway System making it's debut in Missouri in 1956.  We'll skip the background on the Interstate Highway System, and instead look at the history of standards regarding fuel economy in the United States.</p>
+				<p>In the early 1970's, the OPEC Oil Embargo brought both fuel consumption and fuel prices to the attention of the American People.  The fuel shortages and huge jumps in price at the gas pump also caught the attention of the federal government.  The first regulations on the overall fuel economy of any automaker's fleet were established in 1975 with the passing of the Corporate Average Fuel Economy (CAFE) standards.  Without going into too much detail here, these standards were intended to gradually increase the overall fuel economy of each automaker's fleet of production vehicles over time.</p>
+				<p>This first act of Congress persisted until 2007, when the Energy Independence and Security Act was signed into law by President George W. Bush.  This new law mandated an average fuel economy of at least 35 miles per gallon by 2020.  In 2009, the Federal Goverment worked together with automakers and state regulators to develop a plan to implement the Energy Independence and Security Act.  This plan is broken out into 2 phases, with the first wrapping up in model year 2016, and the second holding automakers to an emissions level of 163 grams per mile, or the fuel economy equivalent of more than 54 miles per gallon by 2025.</p>
+				<p>With this background and dataset, what can you visualize?  What kind of data story can you tell?</p>
 			<h2 class="section-heading">Data Notes</h2>
 				<p>There are a few notes on the data this week:</p>
 					<ul>
@@ -127,6 +98,7 @@
 					</ul>
 			<h2 class="section-heading">Data Source</h2>
 				<p>This week's data source comes from the <a href="https://www.eia.gov/totalenergy/data/annual/showtext.php?t=pTB0208" target="_blank">United States Energy Information Administration, or the EIA</a>.</p>
+				<p>Information used to write this historical background comes from the <a href="https://www.ucsusa.org/clean-vehicles/fuel-efficiency/fuel-economy-basics.html#.WuEpI24vypo" target="_blank">Union of Concerned Scientists</a>.</p>
    		  </div>
         </div>
       </div>
