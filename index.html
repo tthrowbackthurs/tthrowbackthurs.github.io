@@ -66,62 +66,49 @@
         <div class="row">
           <div class="col-lg-8 col-md-10 mx-auto">
             <div class="post-heading">
-              <h1>Thomas Edison's Patents</h1>
-              <h2 class="subheading">Week 10 Viz</h2>
+              <h1>Forest Fires 1926 - 2017 </h1>
+              <h2 class="subheading">Week 11 Data</h2>
               <span class="meta">Posted by
-                <a href="https://twitter.com/davidvelleca">David Velleca</a>
-                on May 13, 2018</span>
+                <a href="https://twitter.com/jon_leek">Jonathan Leek</a>
+                on May 17, 2018</span>
             </div>
           </div>
         </div>
       </div>
     </header>
 
-    <!-- Post Content -->
+<!-- Post Content -->
     <article>
       <div class="container">
         <div class="row">
 		  <div class="col-lg-8 col-md-10 mx-auto">
-			<blockquote class="blockquote"><a href="https://query.data.world/s/p3trke35tqi4pz22jt2tug2dx6lymc" target="_blank">Click here to download this week's dataset as a CSV</a></blockquote>
-			<blockquote class="blockquote"><a href="https://query.data.world/s/h7l6incpakkxhnrfitvxsthswk32an" target="_blank">Click here to download this week's dataset as a Hyper Extract</a></blockquote>
+			<blockquote class="blockquote"><a href="https://query.data.world/s/s7dg6u4ljlcwhwmzpvba35skxwik2u" target="_blank">Click here to download this week's dataset as a CSV</a></blockquote>
+			<blockquote class="blockquote"><a href="https://query.data.world/s/mm6xa43h2xp4mxpeo37mj72yqa2xs7" target="_blank">Click here to download this week's dataset as a Hyper Extract</a></blockquote>
 		  </div>
-		  <div class='tableauPlaceholder' id='viz1525918633204' style='position: relative'>
-				<noscript>
-					<a href='#'>
-						<img alt='Thomas Edison - America&#39;s Greatest Inventor ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Th&#47;ThomasEdison-AmericasGreatestInventor&#47;ThomasEdison-AmericasGreatestInventor&#47;1_rss.png' style='border: none' />
-					</a>
-				</noscript>
-				<object class='tableauViz'  style='display:none;'>
-					<param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
-					<param name='embed_code_version' value='3' /> 
-					<param name='site_root' value='' />
-					<param name='name' value='ThomasEdison-AmericasGreatestInventor&#47;ThomasEdison-AmericasGreatestInventor' />
-					<param name='tabs' value='no' />
-					<param name='toolbar' value='yes' />
-					<param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Th&#47;ThomasEdison-AmericasGreatestInventor&#47;ThomasEdison-AmericasGreatestInventor&#47;1.png' /> 
-					<param name='animate_transition' value='yes' />
-					<param name='display_static_image' value='yes' />
-					<param name='display_spinner' value='yes' />
-					<param name='display_overlay' value='yes' />
-					<param name='display_count' value='yes' />
-				</object>
-		  </div>
-                <script type='text/javascript'>
-					var divElement = document.getElementById('viz1525918633204');
-					var vizElement = divElement.getElementsByTagName('object')[0];
-					vizElement.style.width='1100px';vizElement.style.height='1227px';
-					var scriptElement = document.createElement('script');
-					scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-					vizElement.parentNode.insertBefore(scriptElement, vizElement);
-                </script>
 		  <div class="col-lg-8 col-md-10 mx-auto">
-			<h2 class="section-heading">Data Storytelling and Data Viz Approach</h2>
-				<p>I wanted to look at the number of patents by Primary Subject as well as over time.  To meet this desire, I used a clear set of BANs, as well as a stacked bar chart by year.  The BANs are interactive - clicking on them will filter the bar chart, as well as the crosstab at the bottom.  Similarly, clicking on any part of the stacked bar will filter the crosstab at the bottom - both by Primary Subject and year.  Finally, I used URL click actions to drive the user to a PDF of the patent application, courtesy of the wonderful collection on the Rutgers website.  This action is dependent on a calculated URL that concatenates the patent number with a base URL.</p>
-				<p>Nothing else too fancy this week, this was a quick but pretty enjoyable Viz to create.</p>
+			<h2 class="section-heading">Historical Background</h2>
+				<p>I've always had a soft spot for the Pacific Northwest, especially the forests. It should come as no suprise then, that I have tremendous respect for forest fires, and the brave men and women who fight them, either as professionals or as volunteers. Each year, forest fires destroy thousands of acres of forest. Air temperatures can exceed 1,470 °F, and the fires can have a forward rate of spread of upwards of 10 mph.</p>
+
+        <p>This week, we're going take a look at these terrifying forces of nature, and the steps we take to suppress them. The dataset is a combination of a few different tables from the <a href="https://www.nifc.gov/fireInfo/fireInfo_statistics.html" target="_blank">National Interagency Fire Agency</a>, an organization that coordinates responses to wildland fires in the United States. They have a lot of interesting data outside of what I'll be using this week; if this subject matter interests you, I highly recommend checking out their website.</p>
+
+        <p>The dataset is pretty simple; number of fires per year, how many acres those fires covered, and how much money was spent by the Forest Service and Department of Interior Agencies spent suppressing those fires. While it's a relatively simple dataset, I'm confident we'll be able to find some interesting stories.</p>
+
 			<h2 class="section-heading">Data Notes</h2>
-				<p>Some of Edison's patents deal with multiple subject areas.  For the purposes of this datasource, I chose the most appropriate, and included it in the datasource as the 'Primary Subject Matter.'  These subjects were gleaned from the Rutgers site cited below.</p>
+				<p>There are a few notes on the data this week:</p>
+					<ul>
+						<li>Values are in thousands;</li>
+						<li>Until 1959, the 'total' figure includes persons who did not report on their number of years of schooling completed; and</li>
+						<li>In 1992, the Census questions changed, influencing the data as follows:</li>
+							<ul>
+								<li>'High School Graduate' falls into the 'High School - 4 Years' category, meaning that regardless of the number of years required to graduate (early graduates), graduates are counted as completing 4 years;</li>
+								<li>Those completing 'Some College' or their Associates Degree fall into the 'College 1-3 Years' bucket;</li>
+								<li>The 'College 4 Years' bucket includes those attaining their Bachelor's, Master's, Doctorate or Professional degrees; and</li>
+								<li>Because of these changes, the median years completed is unavailable.</li>
+							</ul>
+					</ul>
 			<h2 class="section-heading">Data Source</h2>
-				<p>This week's data source comes from <a href="http://edison.rutgers.edu/" target="_blank">Rutgers University's School of Arts and Sciences Thomas A. Edison Papers</a>.  This site was also used for information in this historical background.</p>
+				<p>We'll be using data from the Total Wildland fires and Acres table, as well as the Suppression Costs table. The NIFC actually doesn't know the source of the acreage data before 1983, so take any numbers before that year with a grain of salt.</p>
+        <p>It's also important to note that expenditures are not adjusted for inflation as provided.</p>
    		  </div>
         </div>
       </div>
