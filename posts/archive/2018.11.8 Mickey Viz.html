@@ -123,7 +123,12 @@
 			vizElement.style.width='1000px';vizElement.style.height='1727px';                    
 			var scriptElement = document.createElement('script');                    
 			scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
-			vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+			vizElement.parentNode.insertBefore(scriptElement, vizElement);  
+			var options = {
+				width: '1000px',
+				hideTabs: true,
+				hideToolbar: true,
+			};			
 		  </script>
 		  <div class="col-lg-8 col-md-10 mx-auto">
 			<h2 class="section-heading">Historical Background</h2>
