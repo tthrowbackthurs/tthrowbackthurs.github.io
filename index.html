@@ -71,17 +71,17 @@
 
 
     <!-- Page Header -->
-    <header class="masthead" style="background-image: url('https://raw.githubusercontent.com/tthrowbackthurs/tthrowbackthurs.github.io/master/img/Xmas.jpg')">
+    <header class="masthead" style="background-image: url('https://raw.githubusercontent.com/tthrowbackthurs/tthrowbackthurs.github.io/master/img/beer.jpg')">
       <div class="overlay"></div>
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-md-10 mx-auto">
             <div class="post-heading">
-              <h1>US Christmas Tree Sales - 2010 to 2016<h1>
-              <h2 class="subheading">Week 40 Viz</h2>
+              <h1>US Beer Production - 1950 to 2017<h1>
+              <h2 class="subheading">Week 41 Dataset and Historical Background</h2>
               <span class="meta">Posted by
                 <a href="https://twitter.com/DavidVelleca">David Velleca</a>
-                on December 6, 2018</span>
+                on December 9, 2018</span>
             </div>
           </div>
         </div>
@@ -93,18 +93,15 @@
       <div class="container">
         <div class="row">
 		  <div class="col-lg-8 col-md-10 mx-auto">
-			<blockquote class="blockquote"><a href="https://query.data.world/s/vx7d4wkrf64rgbb4fiflewjynz3pnk" target="_blank">Click here to download this week's dataset as a CSV</a></blockquote>
-			<blockquote class="blockquote"><a href="https://query.data.world/s/sngmmhnt2o6ls5w2yta366gxaudezv" target="_blank">Click here to download this week's dataset as a Hyper Extract</a></blockquote>
+			<blockquote class="blockquote"><a href="https://query.data.world/s/vlasdzkqth2b34iypzgsyfhxcvv2k3" target="_blank">Click here to download this week's dataset as a CSV</a></blockquote>
+			<blockquote class="blockquote"><a href="https://query.data.world/s/m2nk2jsjafp247gh37nnxrdnnopmgi" target="_blank">Click here to download this week's dataset as a Hyper Extract</a></blockquote>
 		  </div>
-		  <div class='tableauPlaceholder' id='viz1544149911368' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;OC&#47;OChristmasTree_0&#47;OChristmasTree&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='OChristmasTree_0&#47;OChristmasTree' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;OC&#47;OChristmasTree_0&#47;OChristmasTree&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1544149911368');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1100px';vizElement.style.height='377px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
 		  <div class="col-lg-8 col-md-10 mx-auto">
-			<h2 class="section-heading">Dataviz Approach and Data Storytelling</h2>
-				<p>I focused on creating a clean and minimalistic viz for this week.  I wanted to look at the disparity between the sales of real trees and artificial trees.  In theory, if you're a "real tree person," you're buying a tree every year.  Whereas if you're a "artificial tree person," you should be able to get several years out of a tree (though I will note that they don't make trees like they used to...).</p>
-				<p>To achieve my goal, I created a small calculated field that shifted the position of my data points for artificial and real trees slightly from the year.  This way, I would be able to stagger the my shapes but keep them close to the corresponding year.  I then created two shapes (Christmas Trees) - one for artificial and one for real trees.  In order to ensure that the stumps of my trees lined up at the same point, I made sure that the stump was at the center point of the image with a empty transparent piece making up the rest of the image.  I then modified the axis to hide the transparent piece of the shape off the viz.</p>
-				<p>My favorite part of this viz is the tooltip.  I created a second "tooltip sheet" with a transparent background that I floated over my viz.  This allowed for the data to show up regardless of which shape the user hovered over.  I included a viz in tooltip, that shows the break out of sales by year.  The real cool thing here is that with a bit of data prep and a few calculated fields, I was able to use the filter functionality of the viz in tooltip to actually highlight the selected year (I'll post my methodology to <a href='https://davidvelleca.com' target='_blank'> at a later date).</p>
-				<p>Overall, I'm really happy with my viz this week.  It turned out better than I had initially expected. There's still time to participate in this week's challenge!  We'd love to see what you can uncover!  Download the data and see what you can do.  Create your viz and post your work to Tableau Public and Twitter with the hashtag #ThrowbackDataThursday, tagging <a href="https://twitter.com/TThrowbackThurs" target="_blank">@TThrowbackThurs</a>.  We'd really love to see what you can come up with!</p>
+			<h2 class="section-heading">Dataset and Historical Background</h2>
+				<p>Quick writeup this week.  We're looking at beer production in the United States in selected years from 1950 to 2017.  The dataset looks at the top 10 brewers by year, as well as the total number of barrels brewed in the selected years.  The time covered in this dataset includes some interesting changes in beer consumption and production.  From the consolidation of brewers to the rise of the microbrew.  The dataset is simple, but the insights that are hidden in this dataset are numerous.</p>
+				<p>We'd love to see what you can uncover!  Download the data and see what you can do.  Create your viz and post your work to Tableau Public and Twitter with the hashtag #ThrowbackDataThursday, tagging <a href="https://twitter.com/TThrowbackThurs" target="_blank">@TThrowbackThurs</a>.  We'd really love to see what you can come up with!</p>
 			<h2 class="section-heading">Data Source</h2>
-				<p>This week's dataset comes from <a href="https://www.statista.com/statistics/209249/purchase-figures-for-real-and-fake-christmas-trees-in-the-us/" target="_blank">Statista</a>.  Please be sure to cite the source on your viz.  The photo on this page is from the Baltimore Sun.</p>
+				<p>This week's dataset comes from <a href="http://www.beerhistory.com/library/holdings/shakeout.shtml" target="_blank">Beer History</a>.  Please be sure to cite the source on your viz.  The photo on this page is from the Baltimore Sun.</p>
 		  </div>
 	  </div>
     </article>
