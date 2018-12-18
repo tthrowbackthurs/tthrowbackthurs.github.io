@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-128697551-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	  gtag('config', 'UA-128697551-1');
+	</script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon"	  
+      href="/favicon_vpW_icon.ico">
+    <title>Throwback Data Thursday</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="/css/clean-blog.min.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <style>
+        html, body { height: 100% }
+    </style>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+	      <a class="navbar-brand" href="/index.html"><img src="/Logo.png" width="250"></img></a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/archive.html">Archive</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/datasets.html">Datasets</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <!-- Page Header -->
+    <header class="masthead" style="background-image: url('https://raw.githubusercontent.com/tthrowbackthurs/tthrowbackthurs.github.io/master/img/beer.jpg')">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="post-heading">
+              <h1>US Beer Production - 1950 to 2017<h1>
+              <h2 class="subheading">Week 42 Viz</h2>
+              <span class="meta">Posted by
+                <a href="https://twitter.com/DavidVelleca">David Velleca</a>
+                on December 18, 2018</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+<!-- Post Content -->
+    <article>
+      <div class="container">
+        <div class="row">
+		  <div class="col-lg-8 col-md-10 mx-auto">
+			<blockquote class="blockquote"><a href="https://query.data.world/s/vlasdzkqth2b34iypzgsyfhxcvv2k3" target="_blank">Click here to download this week's dataset as a CSV</a></blockquote>
+			<blockquote class="blockquote"><a href="https://query.data.world/s/m2nk2jsjafp247gh37nnxrdnnopmgi" target="_blank">Click here to download this week's dataset as a Hyper Extract</a></blockquote>
+		  </div>
+		  <div class='tableauPlaceholder' id='viz1545142375535' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;7J&#47;7JM25X5FM&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='path' value='shared&#47;7JM25X5FM' /> <param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;7J&#47;7JM25X5FM&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1545142375535');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1000px';vizElement.style.height='1027px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+		  <div class="col-lg-8 col-md-10 mx-auto">
+			<h2 class="section-heading">Dataviz Approach and Data Storytelling</h2>
+				<p>For this dataset, I wanted to look at the changing dynamic between the top 10 brewers and all of the other brewers.  To do this, I wanted to take advantage of the theme and use a filled shape chart to add some visual interest to the viz.  I used a pretty simple method detailed by <a href="https://www.kenflerlage.com/2018/04/filled-shapes.html" target="_blank">Kevin Flerlage</a>.  He details how to create a bar chart, then prepare an image with a transparent shape to float over the bar chart on the dashboard.</p>
+				<p>This method creates a really nice looking visual, but because there is an image over the actual viz, it is impossible to interact with.  Thanks to Tableau 2018.3 and transparent backgrounds, I was able to take Kevin's method one step further and add in functional tooltips.  I duplicated my base bar chart, and adjusted the opacity of the color card to 0%, making the bars transparent.  I then formatted the sheet, choosing none as the background color, and added the worksheet to my dashboard.  By floating all of the elements on the dashboard, I was able to ensure that my 'invisible' tooltip worksheet was able to be on top, and accessible to the user.</p>
+				<p>The last piece of this viz was some additional interactivity.  I wanted to allow the user to choose between percent of total and total barrels.  Because I broke the bar charts into two rows, to make this work without impacting my axes, I had to use my parameter as a sheet selector, driving whether the percent of total or total barrels sheets were shown.  Both the actual bar charts and the tooltip sheets had this method applied, ensuring that the tooltips and data lined up perfectly.</p>
+				<p>There's still time to have your take on the data!  We'd love to see what you can uncover!  Download the data and see what you can do.  Create your viz and post your work to Tableau Public and Twitter with the hashtag #ThrowbackDataThursday, tagging <a href="https://twitter.com/TThrowbackThurs" target="_blank">@TThrowbackThurs</a>.  We'd really love to see what you can come up with!</p>
+			<h2 class="section-heading">Data Source</h2>
+				<p>This week's dataset comes from <a href="http://www.beerhistory.com/library/holdings/shakeout.shtml" target="_blank">Beer History</a>.  Please be sure to cite the source on your viz.  The photo on this page is from the Baltimore Sun.</p>
+		  </div>
+	  </div>
+    </article>
+      <hr>
+
+   <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <ul class="list-inline text-center">
+              <li class="list-inline-item">
+                <a href="https://twitter.com/TThrowbackThurs">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              <li class="list-inline-item">
+                <a href="https://github.com/tthrowbackthurs/Datasets">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+            </ul>
+            <p class="copyright text-muted">Copyright &copy; ThrowbackThursday.com 2018</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/clean-blog.min.js"></script>
+
+  </body>
+
+</html>
