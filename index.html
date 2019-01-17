@@ -77,10 +77,10 @@
           <div class="col-lg-8 col-md-10 mx-auto">
             <div class="post-heading">
               <h1>Manned Spaceflight - 1961 - 2018<h1>
-              <h2 class="subheading">2019 Week 3 Dataset and Historical Background</h2>
+              <h2 class="subheading">2019 Week 3 Viz</h2>
               <span class="meta">Posted by
                 <a href="https://twitter.com/DavidVelleca">David Velleca</a>
-                on January 14, 2019</span>
+                on January 17, 2019</span>
             </div>
           </div>
         </div>
@@ -98,11 +98,41 @@
 			<blockquote class="blockquote"><a href="https://query.data.world/s/foejlyqcsxjw2u6b4xnxbvmudvj6tf" target="_blank">Click here to download the 'Mission' dataset as a Hyper Extract from Data.World</a></blockquote>
 			<blockquote class="blockquote"><a href="https://query.data.world/s/ann3tnv3bvbwzl2zoalqflp22v7ys4" target="_blank">Click here to download the 'Crew' dataset as a CSV from Data.World</a></blockquote>
 			<blockquote class="blockquote"><a href="https://query.data.world/s/vwargoypioqvyc4mgjy2gf2gzbl4xj" target="_blank">Click here to download the 'Crew' dataset as a Hyper Extract from Data.World</a></blockquote>
-		  </div>
-		  <div class="col-lg-8 col-md-10 mx-auto">
+				<div class='tableauPlaceholder' id='viz1547736661835' style='position: relative'>
+					<noscript>
+						<a href='#'>
+							<img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ma&#47;MannedSpaceflight-1961to2018&#47;MannedSpaceflight-1961to2018byNumberofLaunches&#47;1_rss.png' style='border: none' />
+						</a>
+					</noscript>
+					<object class='tableauViz'  style='display:none;'>
+						<param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+						<param name='embed_code_version' value='3' /> 
+						<param name='site_root' value='' />
+						<param name='name' value='MannedSpaceflight-1961to2018&#47;MannedSpaceflight-1961to2018byNumberofLaunches' />
+						<param name='tabs' value='no' />
+						<param name='toolbar' value='yes' />
+						<param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ma&#47;MannedSpaceflight-1961to2018&#47;MannedSpaceflight-1961to2018byNumberofLaunches&#47;1.png' />
+						<param name='animate_transition' value='yes' />
+						<param name='display_static_image' value='yes' />
+						<param name='display_spinner' value='yes' />
+						<param name='display_overlay' value='yes' />
+						<param name='display_count' value='yes' />
+					</object>
+				</div>                
+					<script type='text/javascript'>                    
+					var divElement = document.getElementById('viz1547736661835');                    
+					var vizElement = divElement.getElementsByTagName('object')[0];                    
+					vizElement.style.width='1100px';vizElement.style.height='727px';                    
+					var scriptElement = document.createElement('script');                    
+					scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+					vizElement.parentNode.insertBefore(scriptElement, vizElement);
+				</script>
 			<h2 class="section-heading">Historical Background</h2>
-				<p>A really quick write up this week.  Coming out of World War II, the race for military dominance had shifted to space.  The United States and the Soviet Union began a series of space missions that would officially be kicked off by the Soviet's launch of Sputnik and culminated with the landing of Apollo 11 on the Moon.  This week's dataset looks at a subset of space history, focusing on manned space missions.</p>
-				<p>We'd really love to see what you can do with this week's dataset!  Download the data and see what you can do.  Create your viz and post your work to Tableau Public and Twitter with the hashtag #ThrowbackDataThursday, tagging <a href="https://twitter.com/TThrowbackThurs" target="_blank">@TThrowbackThurs</a>.  We're really looking forward to seeing what the Tableau Community can come up with!</p>
+				<p>For this dataset, I chose to focus on the number of launches by launch vehicle.  When speaking with colleagues about the dataset while teaching a Tableau training session last week, we discussed (and quickly demoed) creating a lollipop chart, using images of each launch vehicle as the lollipop and the number of launches at the stem.  While I initially liked the idea, I was a bit hesitant due to the number of custom shapes I'd need to find, scale and modify.  I filed the idea away and started exploring other insights in the datasource.</p>
+				<p>However, I kept coming back to the lollipop idea, and was sold on it when I found an awesome piece of artwork from <a href="https://skrabek.com/rockets-of-the-world/" target="_blank">Tyler Skrabek</a>.  I modified the images to get individual images of each launch vehicle then padded the images to ensure that the bottoms of the rockets would end at the top of the bar, and that they would maintain their scale (the Saturn V was 363 feet tall while the Mercury Redstone was only 83 feet tall).  Now that I had the images, it was time to tackle the bar, or the stem of the lollipop.</p>
+				<p>I'd seen <a href="https://public.tableau.com/profile/ken.flerlage#!/vizhome/GradientColorBarChart/Gradient" target="_blank">Ken Flerlage's gradient bar chart</a>, and thought that this would be a great time to employ the methodology.  It's a relatively simple technique leveraging bins and an INDEX calculation, and I'm really happy with how it turned out.  When I placed the viz on my dashboard, I noticed right away that by making the shapes really large, it interfered with the interactivity of my tooltips.  Fortunately, transparent backgrounds in Tableau 2018.3 made this an easy problem to solve, and also provided the opportunity to add some smoke/clouds at the base of the rockets' launches.</p>
+				<p>I created a couple of dummy calculations - 0.0 and 1.0, creating an upside down lollipop chart, where the 0.0 denoted the location of my clouds, and the 1.0 would serve as an invisible bar to provide all of the pertinent tooltip info.  I set the color opacity of the bar to 0%, fixed my axis at 0 to 1, and floated this 'tooltip' sheet over my rockets.  The finishing touch here was to include an option to sort by the date of the first launch, or by the number of launches.  I employed a dashboard button to swap between sheets, which (while not the only way to accomplish this) let me use some additional space elements on the viz - the moon and the International Space Station.</p>
+				<p>I definitely spent more time creating my custom shapes, but am really happy with how this one turned out!  We'd really love to see what you can do with this week's dataset!  Download the data and see what you can do.  Create your viz and post your work to Tableau Public and Twitter with the hashtag #ThrowbackDataThursday, tagging <a href="https://twitter.com/TThrowbackThurs" target="_blank">@TThrowbackThurs</a>.  We're really looking forward to seeing what the Tableau Community can come up with!</p>
 			<h2 class="section-heading">Data Source</h2>
 				<p>Both of this week's datasets comes from <a href="https://en.wikipedia.org/wiki/List_of_human_spaceflights" target="_blank">Wikipedia</a>.  Please be sure to cite the source on your viz.</p>
 		  </div>
